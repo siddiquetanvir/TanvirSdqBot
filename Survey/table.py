@@ -1,63 +1,121 @@
-from commons import get_participants, COUNTRY_MAP, EVENT_MAP
-import re
-import pandas as pd
-import numpy as np
+import requests, re, pandas as pd, numpy as np
+import matplotlib.pyplot as plt
 from IPython.display import display, Markdown
+from collections import defaultdict
+from itertools import permutations
+import math
+from matplotlib import rcParams
 
-def generate_country_trend_tables(codes):
-    groups = {}
-    for cd in codes:
-        cd_clean = re.sub(r'\s+', '', cd).lower()
-        m = re.match(r'(wlf|wle|wlm)([a-z]{2})(\d{2})', cd_clean)
-        if m:
-            comp, country, yr = m.groups()
-            groups.setdefault(country, {}).setdefault(comp, []).append((cd_clean, int(yr)))
+EVENT_MAP = {'wlf': 'Folklore', 'wle': 'Earth', 'wlm': 'Monuments', 'wlb': 'Bangla'}
+COUNTRY_MAP = {
+    'bd': 'Bangladesh', 'in': 'India', 'de': 'Germany', 'it': 'Italy',
+    'fr': 'France', 'us': 'United_States', 'ca': 'Canada', 'uk': 'United_Kingdom',
+    'nl': 'Netherlands', 'pl': 'Poland', 'br': 'Brazil', 'mx': 'Mexico',
+    'es': 'Spain', 'pt': 'Portugal', 'pk': 'Pakistan', 'np': 'Nepal',
+    'ng': 'Nigeria', 'ke': 'Kenya', 'id': 'Indonesia',
+    'ph': 'Philippines', 'my': 'Malaysia', 'tr': 'Turkey', 'eg': 'Egypt',
+    'ua': 'Ukraine', 'ru': 'Russia', 'ch': 'Switzerland', 'se': 'Sweden',
+    'no': 'Norway', 'fi': 'Finland', 'be': 'Belgium', 'at': 'Austria',
+    'ar': 'Argentina', 'co': 'Colombia'
+}
+
+def get_participants(code):
+    try:
+        code = re.sub(r'\s+', '', code).lower()
+        event, cc, yr = re.match(r'(wlf|wle|wlm)([a-z]{0,2})(\d{2})', code).groups()
+        category = f"Images_from_Wiki_Loves_{EVENT_MAP[event]}_{2000 + int(yr)}"
+        if cc:
+            category += f"_in_{COUNTRY_MAP.get(cc, '')}"
+        participants, url, params = set(), "https://commons.wikimedia.org/w/api.php", {
+            "action": "query", "generator": "categorymembers", 
+            "gcmtitle": f"Category:{category}", "gcmnamespace": 6, 
+            "gcmtype": "file", "prop": "imageinfo", "iiprop": "user",
+            "format": "json", "gcmlimit": "max"
+        }
+        while True:
+            data = requests.get(url, params=params, timeout=15).json()
+            pages = data.get('query', {}).get('pages', {})
+            participants.update(p['imageinfo'][0]['user'] for p in pages.values() if p.get('imageinfo'))
+            if 'continue' in data and 'gcmcontinue' in data['continue']:
+                params['gcmcontinue'] = data['continue']['gcmcontinue']
+            else: break
+        return participants
+    except Exception as e:
+        display(Markdown(f"**Error processing {code}:** {str(e)}"))
+        return set()
+
+def find_peak_and_deviation(values):
+    if not values: return (0.0, 0.0)
+    freq = {}
+    for v in values:
+        r = round(v, 1)
+        freq[r] = freq.get(r, 0) + 1
+    peak_rounded = max(freq, key=freq.get)
+    diffs = [(v - peak_rounded)**2 for v in values]
+    var = sum(diffs) / (len(diffs) - 1) if len(diffs) > 1 else 0
+    return (peak_rounded, math.sqrt(var))
+
+def analyze_country_overlaps(codes):
+    valid = [c for c in (re.sub(r'\s+', '', cd).lower() for cd in codes) 
+            if re.match(r'(wlf|wle|wlm)([a-z]{0,2})(\d{2})', c)]
     
-    country_tables = {}
-    for country, comp_dict in groups.items():
-        rows = []
-        for comp, events in comp_dict.items():
-            events.sort(key=lambda x: x[1])
-            if len(events) < 2:
-                rows.append({
-                    "Competition": EVENT_MAP[comp],
-                    "Event Count": len(events),
-                    "Min": "N/A",
-                    "Median": "N/A",
-                    "Max": "N/A",
-                    "Event Pairs": "Insufficient data"
-                })
-                continue
-                
-            retentions = []
-            event_pairs = []
-            for i in range(len(events)-1):
-                prev = get_participants(events[i][0])
-                next_ = get_participants(events[i+1][0])
-                if prev:
-                    rate = len(prev & next_) / len(prev) * 100
-                    retentions.append(rate)
-                    event_pairs.append(f"{events[i][1]}-{events[i+1][1]}")
-            
-            if retentions:
-                rows.append({
-                    "Competition": EVENT_MAP[comp],
-                    "Event Count": len(events),
-                    "Min": f"{np.min(retentions):.1f}%",
-                    "Median": f"{np.median(retentions):.1f}%",
-                    "Max": f"{np.max(retentions):.1f}%",
-                    "Event Pairs": ", ".join(event_pairs)
-                })
+    country_events = defaultdict(dict)
+    for code in valid:
+        event, cc, yr = re.match(r'(wlf|wle|wlm)([a-z]{0,2})(\d{2})', code).groups()
+        if cc in COUNTRY_MAP:
+            country_events[cc][code] = get_participants(code)
+    
+    trend_reports = []
+    for country_code, events in country_events.items():
+        if len(events) < 2: continue
         
-        if rows:
-            country_name = COUNTRY_MAP.get(country, country.upper())
-            country_tables[country_name] = pd.DataFrame(rows)
+        pairs = list(permutations(events.keys(), 2))
+        percentages = []
+        for source, target in pairs:
+            source_users = events[source]
+            if not source_users: continue
+            overlap = len(source_users & events[target])
+            retention = (overlap / len(source_users)) * 100
+            percentages.append(retention)
+        
+        if not percentages: continue
+        
+        peak_val, peak_dev = find_peak_and_deviation(percentages)
+        range_lower = max(0, peak_val - peak_dev)
+        range_upper = min(100, peak_val + peak_dev)
+        
+        trend_reports.append({
+            'Country': COUNTRY_MAP[country_code],
+            'Events': len(events),
+            'Max': f"{np.max(percentages):.1f}%",
+            'Median': f"{np.median(percentages):.1f}%",
+            'Average': f"{np.mean(percentages):.1f}%",
+            'Peak Range': f"{range_lower:.1f}% - {range_upper:.1f}%",
+            'Std Dev': f"{np.std(percentages, ddof=1):.1f}%"
+        })
     
-    return country_tables
+    if trend_reports:
+        df = pd.DataFrame(trend_reports)
+        df.index = df.index + 1
+        
+        # Save high-res table image
+        plt.figure(figsize=(12, 6), dpi=300)
+        ax = plt.subplot(frame_on=False)
+        ax.xaxis.set_visible(False)
+        ax.yaxis.set_visible(False)
+        
+        table = pd.plotting.table(ax, df, loc='center', cellLoc='center')
+        table.auto_set_font_size(False)
+        table.set_fontsize(11)
+        table.scale(1.2, 1.5)
+        plt.tight_layout()
+        plt.savefig('retention_analysis_highres.png', dpi=600, bbox_inches='tight')
+        plt.close()
+        
+        # Display in notebook
+        display(Markdown("**Cross-Event Retention Analysis**"))
+        display(df[['Country', 'Events', 'Max', 'Median', 'Average', 'Peak Range', 'Std Dev']])
+    else:
+        display(Markdown("**No valid multi-event country data found**"))
 
-if __name__ == "__main__":
-    codes = input("Enter event codes: ").split()
-    tables = generate_country_trend_tables(codes)
-    for country, df in tables.items():
-        display(Markdown(f"### {country} Trends"))
-        display(df.style.format({'Min': '{:.1f}%', 'Median': '{:.1f}%', 'Max': '{:.1f}%'}))
+analyze_country_overlaps(input("Enter event codes (space-separated): ").split())
