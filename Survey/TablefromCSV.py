@@ -1,12 +1,12 @@
 import pandas as pd
 
-filename = 'survey 21-25(f) (copy).csv'
+filename = '2021 - 2025(WLF).csv'
 
 img_resolution = 1080
 cellheight = 30
 cellwidth = [90, 60, 60, 60, 60, 100, 60, 0]	# width for every column. set value to 0 to skip a column
 txt_lpad = [17, 25, 14, 16, 16, 16, 14]     # left padding for text in every column
-head_lpad = [17, 12, 19, 11, 9, 19, 9]      # left padding for header text in every column
+head_lpad = [17, 12, 19, 11, 11, 19, 9]      # left padding for header text in every column
 txt_tpad = 19						# top padding including font height
 font_size = 10.4
 cell_border_width = 0.45

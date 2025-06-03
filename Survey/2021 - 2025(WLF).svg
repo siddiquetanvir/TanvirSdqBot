@@ -1,0 +1,632 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 900"  width="1080" height="1983.6734693877552">
+
+    <rect id="Country_cell" x="0" y="0" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Country_value" x="17" y="19" font-family="Roboto" font-size="10.4" fill="#000">Country</text>
+
+    <rect id="Events_cell" x="90" y="0" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Events_value" x="102" y="19" font-family="Roboto" font-size="10.4" fill="#000">Events</text>
+
+    <rect id="Max_cell" x="150" y="0" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Max_value" x="169" y="19" font-family="Roboto" font-size="10.4" fill="#000">Max</text>
+
+    <rect id="Median_cell" x="210" y="0" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Median_value" x="221" y="19" font-family="Roboto" font-size="10.4" fill="#000">Median</text>
+
+    <rect id="Average_cell" x="270" y="0" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Average_value" x="281" y="19" font-family="Roboto" font-size="10.4" fill="#000">Average</text>
+
+    <rect id="IQR Range_cell" x="330" y="0" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="IQR Range_value" x="349" y="19" font-family="Roboto" font-size="10.4" fill="#000">IQR Range</text>
+
+    <rect id="Std Dev_cell" x="430" y="0" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Std Dev_value" x="439" y="19" font-family="Roboto" font-size="10.4" fill="#000">Std Dev</text>
+
+    <rect id="Bangladesh_Country_cell" x="0" y="30" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Bangladesh_Country_value" x="17" y="49" font-family="Roboto" font-size="10.4" fill="#000">Bangladesh</text>
+
+    <rect id="Bangladesh_Events_cell" x="90" y="30" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Bangladesh_Events_value" x="115" y="49" font-family="Roboto" font-size="10.4" fill="#000">9</text>
+
+    <rect id="Bangladesh_Max_cell" x="150" y="30" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Bangladesh_Max_value" x="164" y="49" font-family="Roboto" font-size="10.4" fill="#000">25.0%</text>
+
+    <rect id="Bangladesh_Median_cell" x="210" y="30" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Bangladesh_Median_value" x="226" y="49" font-family="Roboto" font-size="10.4" fill="#000">2.4%</text>
+
+    <rect id="Bangladesh_Average_cell" x="270" y="30" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Bangladesh_Average_value" x="286" y="49" font-family="Roboto" font-size="10.4" fill="#000">3.4%</text>
+
+    <rect id="Bangladesh_IQR Range_cell" x="330" y="30" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Bangladesh_IQR Range_value" x="346" y="49" font-family="Roboto" font-size="10.4" fill="#000">4.1% - 0.0%</text>
+
+    <rect id="Bangladesh_Std Dev_cell" x="430" y="30" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Bangladesh_Std Dev_value" x="444" y="49" font-family="Roboto" font-size="10.4" fill="#000">4.8%</text>
+
+    <rect id="India_Country_cell" x="0" y="60" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="India_Country_value" x="17" y="79" font-family="Roboto" font-size="10.4" fill="#000">India</text>
+
+    <rect id="India_Events_cell" x="90" y="60" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="India_Events_value" x="115" y="79" font-family="Roboto" font-size="10.4" fill="#000">9</text>
+
+    <rect id="India_Max_cell" x="150" y="60" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="India_Max_value" x="164" y="79" font-family="Roboto" font-size="10.4" fill="#000">16.5%</text>
+
+    <rect id="India_Median_cell" x="210" y="60" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="India_Median_value" x="226" y="79" font-family="Roboto" font-size="10.4" fill="#000">4.5%</text>
+
+    <rect id="India_Average_cell" x="270" y="60" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="India_Average_value" x="286" y="79" font-family="Roboto" font-size="10.4" fill="#000">6.2%</text>
+
+    <rect id="India_IQR Range_cell" x="330" y="60" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="India_IQR Range_value" x="346" y="79" font-family="Roboto" font-size="10.4" fill="#000">9.5% - 2.6%</text>
+
+    <rect id="India_Std Dev_cell" x="430" y="60" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="India_Std Dev_value" x="444" y="79" font-family="Roboto" font-size="10.4" fill="#000">4.3%</text>
+
+    <rect id="Germany_Country_cell" x="0" y="90" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Germany_Country_value" x="17" y="109" font-family="Roboto" font-size="10.4" fill="#000">Germany</text>
+
+    <rect id="Germany_Events_cell" x="90" y="90" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Germany_Events_value" x="115" y="109" font-family="Roboto" font-size="10.4" fill="#000">13</text>
+
+    <rect id="Germany_Max_cell" x="150" y="90" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Germany_Max_value" x="164" y="109" font-family="Roboto" font-size="10.4" fill="#000">57.1%</text>
+
+    <rect id="Germany_Median_cell" x="210" y="90" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Germany_Median_value" x="226" y="109" font-family="Roboto" font-size="10.4" fill="#000">16.7%</text>
+
+    <rect id="Germany_Average_cell" x="270" y="90" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Germany_Average_value" x="286" y="109" font-family="Roboto" font-size="10.4" fill="#000">17.5%</text>
+
+    <rect id="Germany_IQR Range_cell" x="330" y="90" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Germany_IQR Range_value" x="346" y="109" font-family="Roboto" font-size="10.4" fill="#000">28.2% - 4.8%</text>
+
+    <rect id="Germany_Std Dev_cell" x="430" y="90" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Germany_Std Dev_value" x="444" y="109" font-family="Roboto" font-size="10.4" fill="#000">13.3%</text>
+
+    <rect id="Italy_Country_cell" x="0" y="120" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Italy_Country_value" x="17" y="139" font-family="Roboto" font-size="10.4" fill="#000">Italy</text>
+
+    <rect id="Italy_Events_cell" x="90" y="120" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Italy_Events_value" x="115" y="139" font-family="Roboto" font-size="10.4" fill="#000">13</text>
+
+    <rect id="Italy_Max_cell" x="150" y="120" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Italy_Max_value" x="164" y="139" font-family="Roboto" font-size="10.4" fill="#000">46.2%</text>
+
+    <rect id="Italy_Median_cell" x="210" y="120" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Italy_Median_value" x="226" y="139" font-family="Roboto" font-size="10.4" fill="#000">7.2%</text>
+
+    <rect id="Italy_Average_cell" x="270" y="120" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Italy_Average_value" x="286" y="139" font-family="Roboto" font-size="10.4" fill="#000">10.7%</text>
+
+    <rect id="Italy_IQR Range_cell" x="330" y="120" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Italy_IQR Range_value" x="346" y="139" font-family="Roboto" font-size="10.4" fill="#000">17.2% - 2.8%</text>
+
+    <rect id="Italy_Std Dev_cell" x="430" y="120" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Italy_Std Dev_value" x="444" y="139" font-family="Roboto" font-size="10.4" fill="#000">10.2%</text>
+
+    <rect id="France_Country_cell" x="0" y="150" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="France_Country_value" x="17" y="169" font-family="Roboto" font-size="10.4" fill="#000">France</text>
+
+    <rect id="France_Events_cell" x="90" y="150" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="France_Events_value" x="115" y="169" font-family="Roboto" font-size="10.4" fill="#000">6</text>
+
+    <rect id="France_Max_cell" x="150" y="150" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="France_Max_value" x="164" y="169" font-family="Roboto" font-size="10.4" fill="#000">22.2%</text>
+
+    <rect id="France_Median_cell" x="210" y="150" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="France_Median_value" x="226" y="169" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="France_Average_cell" x="270" y="150" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="France_Average_value" x="286" y="169" font-family="Roboto" font-size="10.4" fill="#000">4.0%</text>
+
+    <rect id="France_IQR Range_cell" x="330" y="150" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="France_IQR Range_value" x="346" y="169" font-family="Roboto" font-size="10.4" fill="#000">8.6% - 0.0%</text>
+
+    <rect id="France_Std Dev_cell" x="430" y="150" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="France_Std Dev_value" x="444" y="169" font-family="Roboto" font-size="10.4" fill="#000">6.5%</text>
+
+    <rect id="Canada_Country_cell" x="0" y="180" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Canada_Country_value" x="17" y="199" font-family="Roboto" font-size="10.4" fill="#000">Canada</text>
+
+    <rect id="Canada_Events_cell" x="90" y="180" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Canada_Events_value" x="115" y="199" font-family="Roboto" font-size="10.4" fill="#000">5</text>
+
+    <rect id="Canada_Max_cell" x="150" y="180" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Canada_Max_value" x="164" y="199" font-family="Roboto" font-size="10.4" fill="#000">33.3%</text>
+
+    <rect id="Canada_Median_cell" x="210" y="180" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Canada_Median_value" x="226" y="199" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Canada_Average_cell" x="270" y="180" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Canada_Average_value" x="286" y="199" font-family="Roboto" font-size="10.4" fill="#000">3.7%</text>
+
+    <rect id="Canada_IQR Range_cell" x="330" y="180" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Canada_IQR Range_value" x="346" y="199" font-family="Roboto" font-size="10.4" fill="#000">2.2% - 0.0%</text>
+
+    <rect id="Canada_Std Dev_cell" x="430" y="180" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Canada_Std Dev_value" x="444" y="199" font-family="Roboto" font-size="10.4" fill="#000">8.3%</text>
+
+    <rect id="Poland_Country_cell" x="0" y="210" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Poland_Country_value" x="17" y="229" font-family="Roboto" font-size="10.4" fill="#000">Poland</text>
+
+    <rect id="Poland_Events_cell" x="90" y="210" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Poland_Events_value" x="115" y="229" font-family="Roboto" font-size="10.4" fill="#000">9</text>
+
+    <rect id="Poland_Max_cell" x="150" y="210" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Poland_Max_value" x="164" y="229" font-family="Roboto" font-size="10.4" fill="#000">50.0%</text>
+
+    <rect id="Poland_Median_cell" x="210" y="210" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Poland_Median_value" x="226" y="229" font-family="Roboto" font-size="10.4" fill="#000">1.4%</text>
+
+    <rect id="Poland_Average_cell" x="270" y="210" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Poland_Average_value" x="286" y="229" font-family="Roboto" font-size="10.4" fill="#000">9.5%</text>
+
+    <rect id="Poland_IQR Range_cell" x="330" y="210" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Poland_IQR Range_value" x="346" y="229" font-family="Roboto" font-size="10.4" fill="#000">16.9% - 0.0%</text>
+
+    <rect id="Poland_Std Dev_cell" x="430" y="210" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Poland_Std Dev_value" x="444" y="229" font-family="Roboto" font-size="10.4" fill="#000">13.6%</text>
+
+    <rect id="Brazil_Country_cell" x="0" y="240" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Brazil_Country_value" x="17" y="259" font-family="Roboto" font-size="10.4" fill="#000">Brazil</text>
+
+    <rect id="Brazil_Events_cell" x="90" y="240" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Brazil_Events_value" x="115" y="259" font-family="Roboto" font-size="10.4" fill="#000">13</text>
+
+    <rect id="Brazil_Max_cell" x="150" y="240" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Brazil_Max_value" x="164" y="259" font-family="Roboto" font-size="10.4" fill="#000">100.0%</text>
+
+    <rect id="Brazil_Median_cell" x="210" y="240" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Brazil_Median_value" x="226" y="259" font-family="Roboto" font-size="10.4" fill="#000">2.6%</text>
+
+    <rect id="Brazil_Average_cell" x="270" y="240" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Brazil_Average_value" x="286" y="259" font-family="Roboto" font-size="10.4" fill="#000">5.8%</text>
+
+    <rect id="Brazil_IQR Range_cell" x="330" y="240" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Brazil_IQR Range_value" x="346" y="259" font-family="Roboto" font-size="10.4" fill="#000">5.4% - 0.0%</text>
+
+    <rect id="Brazil_Std Dev_cell" x="430" y="240" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Brazil_Std Dev_value" x="444" y="259" font-family="Roboto" font-size="10.4" fill="#000">11.2%</text>
+
+    <rect id="Mexico_Country_cell" x="0" y="270" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Mexico_Country_value" x="17" y="289" font-family="Roboto" font-size="10.4" fill="#000">Mexico</text>
+
+    <rect id="Mexico_Events_cell" x="90" y="270" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Mexico_Events_value" x="115" y="289" font-family="Roboto" font-size="10.4" fill="#000">4</text>
+
+    <rect id="Mexico_Max_cell" x="150" y="270" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Mexico_Max_value" x="164" y="289" font-family="Roboto" font-size="10.4" fill="#000">6.1%</text>
+
+    <rect id="Mexico_Median_cell" x="210" y="270" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Mexico_Median_value" x="226" y="289" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Mexico_Average_cell" x="270" y="270" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Mexico_Average_value" x="286" y="289" font-family="Roboto" font-size="10.4" fill="#000">0.8%</text>
+
+    <rect id="Mexico_IQR Range_cell" x="330" y="270" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Mexico_IQR Range_value" x="346" y="289" font-family="Roboto" font-size="10.4" fill="#000">0.0% - 0.0%</text>
+
+    <rect id="Mexico_Std Dev_cell" x="430" y="270" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Mexico_Std Dev_value" x="444" y="289" font-family="Roboto" font-size="10.4" fill="#000">1.9%</text>
+
+    <rect id="Spain_Country_cell" x="0" y="300" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Spain_Country_value" x="17" y="319" font-family="Roboto" font-size="10.4" fill="#000">Spain</text>
+
+    <rect id="Spain_Events_cell" x="90" y="300" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Spain_Events_value" x="115" y="319" font-family="Roboto" font-size="10.4" fill="#000">13</text>
+
+    <rect id="Spain_Max_cell" x="150" y="300" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Spain_Max_value" x="164" y="319" font-family="Roboto" font-size="10.4" fill="#000">41.4%</text>
+
+    <rect id="Spain_Median_cell" x="210" y="300" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Spain_Median_value" x="226" y="319" font-family="Roboto" font-size="10.4" fill="#000">8.4%</text>
+
+    <rect id="Spain_Average_cell" x="270" y="300" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Spain_Average_value" x="286" y="319" font-family="Roboto" font-size="10.4" fill="#000">10.6%</text>
+
+    <rect id="Spain_IQR Range_cell" x="330" y="300" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Spain_IQR Range_value" x="346" y="319" font-family="Roboto" font-size="10.4" fill="#000">13.8% - 4.5%</text>
+
+    <rect id="Spain_Std Dev_cell" x="430" y="300" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Spain_Std Dev_value" x="444" y="319" font-family="Roboto" font-size="10.4" fill="#000">8.4%</text>
+
+    <rect id="Portugal_Country_cell" x="0" y="330" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Portugal_Country_value" x="17" y="349" font-family="Roboto" font-size="10.4" fill="#000">Portugal</text>
+
+    <rect id="Portugal_Events_cell" x="90" y="330" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Portugal_Events_value" x="115" y="349" font-family="Roboto" font-size="10.4" fill="#000">13</text>
+
+    <rect id="Portugal_Max_cell" x="150" y="330" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Portugal_Max_value" x="164" y="349" font-family="Roboto" font-size="10.4" fill="#000">33.3%</text>
+
+    <rect id="Portugal_Median_cell" x="210" y="330" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Portugal_Median_value" x="226" y="349" font-family="Roboto" font-size="10.4" fill="#000">2.2%</text>
+
+    <rect id="Portugal_Average_cell" x="270" y="330" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Portugal_Average_value" x="286" y="349" font-family="Roboto" font-size="10.4" fill="#000">5.4%</text>
+
+    <rect id="Portugal_IQR Range_cell" x="330" y="330" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Portugal_IQR Range_value" x="346" y="349" font-family="Roboto" font-size="10.4" fill="#000">7.5% - 0.0%</text>
+
+    <rect id="Portugal_Std Dev_cell" x="430" y="330" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Portugal_Std Dev_value" x="444" y="349" font-family="Roboto" font-size="10.4" fill="#000">8.0%</text>
+
+    <rect id="Pakistan_Country_cell" x="0" y="360" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Pakistan_Country_value" x="17" y="379" font-family="Roboto" font-size="10.4" fill="#000">Pakistan</text>
+
+    <rect id="Pakistan_Events_cell" x="90" y="360" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Pakistan_Events_value" x="115" y="379" font-family="Roboto" font-size="10.4" fill="#000">8</text>
+
+    <rect id="Pakistan_Max_cell" x="150" y="360" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Pakistan_Max_value" x="164" y="379" font-family="Roboto" font-size="10.4" fill="#000">50.0%</text>
+
+    <rect id="Pakistan_Median_cell" x="210" y="360" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Pakistan_Median_value" x="226" y="379" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Pakistan_Average_cell" x="270" y="360" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Pakistan_Average_value" x="286" y="379" font-family="Roboto" font-size="10.4" fill="#000">2.9%</text>
+
+    <rect id="Pakistan_IQR Range_cell" x="330" y="360" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Pakistan_IQR Range_value" x="346" y="379" font-family="Roboto" font-size="10.4" fill="#000">0.0% - 0.0%</text>
+
+    <rect id="Pakistan_Std Dev_cell" x="430" y="360" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Pakistan_Std Dev_value" x="444" y="379" font-family="Roboto" font-size="10.4" fill="#000">8.8%</text>
+
+    <rect id="Nepal_Country_cell" x="0" y="390" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nepal_Country_value" x="17" y="409" font-family="Roboto" font-size="10.4" fill="#000">Nepal</text>
+
+    <rect id="Nepal_Events_cell" x="90" y="390" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nepal_Events_value" x="115" y="409" font-family="Roboto" font-size="10.4" fill="#000">8</text>
+
+    <rect id="Nepal_Max_cell" x="150" y="390" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nepal_Max_value" x="164" y="409" font-family="Roboto" font-size="10.4" fill="#000">50.0%</text>
+
+    <rect id="Nepal_Median_cell" x="210" y="390" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nepal_Median_value" x="226" y="409" font-family="Roboto" font-size="10.4" fill="#000">3.7%</text>
+
+    <rect id="Nepal_Average_cell" x="270" y="390" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nepal_Average_value" x="286" y="409" font-family="Roboto" font-size="10.4" fill="#000">7.5%</text>
+
+    <rect id="Nepal_IQR Range_cell" x="330" y="390" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nepal_IQR Range_value" x="346" y="409" font-family="Roboto" font-size="10.4" fill="#000">8.7% - 0.4%</text>
+
+    <rect id="Nepal_Std Dev_cell" x="430" y="390" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nepal_Std Dev_value" x="444" y="409" font-family="Roboto" font-size="10.4" fill="#000">11.4%</text>
+
+    <rect id="Nigeria_Country_cell" x="0" y="420" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nigeria_Country_value" x="17" y="439" font-family="Roboto" font-size="10.4" fill="#000">Nigeria</text>
+
+    <rect id="Nigeria_Events_cell" x="90" y="420" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nigeria_Events_value" x="115" y="439" font-family="Roboto" font-size="10.4" fill="#000">11</text>
+
+    <rect id="Nigeria_Max_cell" x="150" y="420" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nigeria_Max_value" x="164" y="439" font-family="Roboto" font-size="10.4" fill="#000">33.3%</text>
+
+    <rect id="Nigeria_Median_cell" x="210" y="420" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nigeria_Median_value" x="226" y="439" font-family="Roboto" font-size="10.4" fill="#000">5.7%</text>
+
+    <rect id="Nigeria_Average_cell" x="270" y="420" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nigeria_Average_value" x="286" y="439" font-family="Roboto" font-size="10.4" fill="#000">7.5%</text>
+
+    <rect id="Nigeria_IQR Range_cell" x="330" y="420" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nigeria_IQR Range_value" x="346" y="439" font-family="Roboto" font-size="10.4" fill="#000">11.9% - 2.2%</text>
+
+    <rect id="Nigeria_Std Dev_cell" x="430" y="420" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Nigeria_Std Dev_value" x="444" y="439" font-family="Roboto" font-size="10.4" fill="#000">6.4%</text>
+
+    <rect id="Kenya_Country_cell" x="0" y="450" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Kenya_Country_value" x="17" y="469" font-family="Roboto" font-size="10.4" fill="#000">Kenya</text>
+
+    <rect id="Kenya_Events_cell" x="90" y="450" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Kenya_Events_value" x="115" y="469" font-family="Roboto" font-size="10.4" fill="#000">7</text>
+
+    <rect id="Kenya_Max_cell" x="150" y="450" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Kenya_Max_value" x="164" y="469" font-family="Roboto" font-size="10.4" fill="#000">25.0%</text>
+
+    <rect id="Kenya_Median_cell" x="210" y="450" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Kenya_Median_value" x="226" y="469" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Kenya_Average_cell" x="270" y="450" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Kenya_Average_value" x="286" y="469" font-family="Roboto" font-size="10.4" fill="#000">3.0%</text>
+
+    <rect id="Kenya_IQR Range_cell" x="330" y="450" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Kenya_IQR Range_value" x="346" y="469" font-family="Roboto" font-size="10.4" fill="#000">1.6% - 0.0%</text>
+
+    <rect id="Kenya_Std Dev_cell" x="430" y="450" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Kenya_Std Dev_value" x="444" y="469" font-family="Roboto" font-size="10.4" fill="#000">6.3%</text>
+
+    <rect id="Indonesia_Country_cell" x="0" y="480" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Indonesia_Country_value" x="17" y="499" font-family="Roboto" font-size="10.4" fill="#000">Indonesia</text>
+
+    <rect id="Indonesia_Events_cell" x="90" y="480" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Indonesia_Events_value" x="115" y="499" font-family="Roboto" font-size="10.4" fill="#000">9</text>
+
+    <rect id="Indonesia_Max_cell" x="150" y="480" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Indonesia_Max_value" x="164" y="499" font-family="Roboto" font-size="10.4" fill="#000">15.8%</text>
+
+    <rect id="Indonesia_Median_cell" x="210" y="480" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Indonesia_Median_value" x="226" y="499" font-family="Roboto" font-size="10.4" fill="#000">1.7%</text>
+
+    <rect id="Indonesia_Average_cell" x="270" y="480" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Indonesia_Average_value" x="286" y="499" font-family="Roboto" font-size="10.4" fill="#000">3.0%</text>
+
+    <rect id="Indonesia_IQR Range_cell" x="330" y="480" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Indonesia_IQR Range_value" x="346" y="499" font-family="Roboto" font-size="10.4" fill="#000">4.2% - 0.0%</text>
+
+    <rect id="Indonesia_Std Dev_cell" x="430" y="480" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Indonesia_Std Dev_value" x="444" y="499" font-family="Roboto" font-size="10.4" fill="#000">4.0%</text>
+
+    <rect id="Malaysia_Country_cell" x="0" y="510" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Malaysia_Country_value" x="17" y="529" font-family="Roboto" font-size="10.4" fill="#000">Malaysia</text>
+
+    <rect id="Malaysia_Events_cell" x="90" y="510" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Malaysia_Events_value" x="115" y="529" font-family="Roboto" font-size="10.4" fill="#000">10</text>
+
+    <rect id="Malaysia_Max_cell" x="150" y="510" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Malaysia_Max_value" x="164" y="529" font-family="Roboto" font-size="10.4" fill="#000">25.0%</text>
+
+    <rect id="Malaysia_Median_cell" x="210" y="510" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Malaysia_Median_value" x="226" y="529" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Malaysia_Average_cell" x="270" y="510" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Malaysia_Average_value" x="286" y="529" font-family="Roboto" font-size="10.4" fill="#000">5.0%</text>
+
+    <rect id="Malaysia_IQR Range_cell" x="330" y="510" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Malaysia_IQR Range_value" x="346" y="529" font-family="Roboto" font-size="10.4" fill="#000">9.6% - 0.0%</text>
+
+    <rect id="Malaysia_Std Dev_cell" x="430" y="510" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Malaysia_Std Dev_value" x="444" y="529" font-family="Roboto" font-size="10.4" fill="#000">6.1%</text>
+
+    <rect id="Turkey_Country_cell" x="0" y="540" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Turkey_Country_value" x="17" y="559" font-family="Roboto" font-size="10.4" fill="#000">Turkey</text>
+
+    <rect id="Turkey_Events_cell" x="90" y="540" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Turkey_Events_value" x="115" y="559" font-family="Roboto" font-size="10.4" fill="#000">9</text>
+
+    <rect id="Turkey_Max_cell" x="150" y="540" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Turkey_Max_value" x="164" y="559" font-family="Roboto" font-size="10.4" fill="#000">15.4%</text>
+
+    <rect id="Turkey_Median_cell" x="210" y="540" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Turkey_Median_value" x="226" y="559" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Turkey_Average_cell" x="270" y="540" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Turkey_Average_value" x="286" y="559" font-family="Roboto" font-size="10.4" fill="#000">1.1%</text>
+
+    <rect id="Turkey_IQR Range_cell" x="330" y="540" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Turkey_IQR Range_value" x="346" y="559" font-family="Roboto" font-size="10.4" fill="#000">1.1% - 0.0%</text>
+
+    <rect id="Turkey_Std Dev_cell" x="430" y="540" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Turkey_Std Dev_value" x="444" y="559" font-family="Roboto" font-size="10.4" fill="#000">2.5%</text>
+
+    <rect id="Egypt_Country_cell" x="0" y="570" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Egypt_Country_value" x="17" y="589" font-family="Roboto" font-size="10.4" fill="#000">Egypt</text>
+
+    <rect id="Egypt_Events_cell" x="90" y="570" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Egypt_Events_value" x="115" y="589" font-family="Roboto" font-size="10.4" fill="#000">11</text>
+
+    <rect id="Egypt_Max_cell" x="150" y="570" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Egypt_Max_value" x="164" y="589" font-family="Roboto" font-size="10.4" fill="#000">40.0%</text>
+
+    <rect id="Egypt_Median_cell" x="210" y="570" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Egypt_Median_value" x="226" y="589" font-family="Roboto" font-size="10.4" fill="#000">5.0%</text>
+
+    <rect id="Egypt_Average_cell" x="270" y="570" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Egypt_Average_value" x="286" y="589" font-family="Roboto" font-size="10.4" fill="#000">7.8%</text>
+
+    <rect id="Egypt_IQR Range_cell" x="330" y="570" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Egypt_IQR Range_value" x="346" y="589" font-family="Roboto" font-size="10.4" fill="#000">12.5% - 1.3%</text>
+
+    <rect id="Egypt_Std Dev_cell" x="430" y="570" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Egypt_Std Dev_value" x="444" y="589" font-family="Roboto" font-size="10.4" fill="#000">7.9%</text>
+
+    <rect id="Ukraine_Country_cell" x="0" y="600" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Ukraine_Country_value" x="17" y="619" font-family="Roboto" font-size="10.4" fill="#000">Ukraine</text>
+
+    <rect id="Ukraine_Events_cell" x="90" y="600" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Ukraine_Events_value" x="115" y="619" font-family="Roboto" font-size="10.4" fill="#000">12</text>
+
+    <rect id="Ukraine_Max_cell" x="150" y="600" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Ukraine_Max_value" x="164" y="619" font-family="Roboto" font-size="10.4" fill="#000">41.1%</text>
+
+    <rect id="Ukraine_Median_cell" x="210" y="600" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Ukraine_Median_value" x="226" y="619" font-family="Roboto" font-size="10.4" fill="#000">11.0%</text>
+
+    <rect id="Ukraine_Average_cell" x="270" y="600" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Ukraine_Average_value" x="286" y="619" font-family="Roboto" font-size="10.4" fill="#000">11.9%</text>
+
+    <rect id="Ukraine_IQR Range_cell" x="330" y="600" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Ukraine_IQR Range_value" x="346" y="619" font-family="Roboto" font-size="10.4" fill="#000">19.7% - 1.8%</text>
+
+    <rect id="Ukraine_Std Dev_cell" x="430" y="600" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Ukraine_Std Dev_value" x="444" y="619" font-family="Roboto" font-size="10.4" fill="#000">10.3%</text>
+
+    <rect id="Russia_Country_cell" x="0" y="630" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Russia_Country_value" x="17" y="649" font-family="Roboto" font-size="10.4" fill="#000">Russia</text>
+
+    <rect id="Russia_Events_cell" x="90" y="630" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Russia_Events_value" x="115" y="649" font-family="Roboto" font-size="10.4" fill="#000">11</text>
+
+    <rect id="Russia_Max_cell" x="150" y="630" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Russia_Max_value" x="164" y="649" font-family="Roboto" font-size="10.4" fill="#000">66.7%</text>
+
+    <rect id="Russia_Median_cell" x="210" y="630" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Russia_Median_value" x="226" y="649" font-family="Roboto" font-size="10.4" fill="#000">10.9%</text>
+
+    <rect id="Russia_Average_cell" x="270" y="630" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Russia_Average_value" x="286" y="649" font-family="Roboto" font-size="10.4" fill="#000">16.2%</text>
+
+    <rect id="Russia_IQR Range_cell" x="330" y="630" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Russia_IQR Range_value" x="346" y="649" font-family="Roboto" font-size="10.4" fill="#000">28.7% - 3.2%</text>
+
+    <rect id="Russia_Std Dev_cell" x="430" y="630" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Russia_Std Dev_value" x="444" y="649" font-family="Roboto" font-size="10.4" fill="#000">15.1%</text>
+
+    <rect id="Switzerland_Country_cell" x="0" y="660" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Switzerland_Country_value" x="17" y="679" font-family="Roboto" font-size="10.4" fill="#000">Switzerland</text>
+
+    <rect id="Switzerland_Events_cell" x="90" y="660" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Switzerland_Events_value" x="115" y="679" font-family="Roboto" font-size="10.4" fill="#000">5</text>
+
+    <rect id="Switzerland_Max_cell" x="150" y="660" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Switzerland_Max_value" x="164" y="679" font-family="Roboto" font-size="10.4" fill="#000">66.7%</text>
+
+    <rect id="Switzerland_Median_cell" x="210" y="660" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Switzerland_Median_value" x="226" y="679" font-family="Roboto" font-size="10.4" fill="#000">5.0%</text>
+
+    <rect id="Switzerland_Average_cell" x="270" y="660" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Switzerland_Average_value" x="286" y="679" font-family="Roboto" font-size="10.4" fill="#000">14.8%</text>
+
+    <rect id="Switzerland_IQR Range_cell" x="330" y="660" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Switzerland_IQR Range_value" x="346" y="679" font-family="Roboto" font-size="10.4" fill="#000">25.0% - 0.0%</text>
+
+    <rect id="Switzerland_Std Dev_cell" x="430" y="660" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Switzerland_Std Dev_value" x="444" y="679" font-family="Roboto" font-size="10.4" fill="#000">20.2%</text>
+
+    <rect id="Sweden_Country_cell" x="0" y="690" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Sweden_Country_value" x="17" y="709" font-family="Roboto" font-size="10.4" fill="#000">Sweden</text>
+
+    <rect id="Sweden_Events_cell" x="90" y="690" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Sweden_Events_value" x="115" y="709" font-family="Roboto" font-size="10.4" fill="#000">12</text>
+
+    <rect id="Sweden_Max_cell" x="150" y="690" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Sweden_Max_value" x="164" y="709" font-family="Roboto" font-size="10.4" fill="#000">44.2%</text>
+
+    <rect id="Sweden_Median_cell" x="210" y="690" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Sweden_Median_value" x="226" y="709" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Sweden_Average_cell" x="270" y="690" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Sweden_Average_value" x="286" y="709" font-family="Roboto" font-size="10.4" fill="#000">9.3%</text>
+
+    <rect id="Sweden_IQR Range_cell" x="330" y="690" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Sweden_IQR Range_value" x="346" y="709" font-family="Roboto" font-size="10.4" fill="#000">18.8% - 0.0%</text>
+
+    <rect id="Sweden_Std Dev_cell" x="430" y="690" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Sweden_Std Dev_value" x="444" y="709" font-family="Roboto" font-size="10.4" fill="#000">12.7%</text>
+
+    <rect id="Norway_Country_cell" x="0" y="720" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Norway_Country_value" x="17" y="739" font-family="Roboto" font-size="10.4" fill="#000">Norway</text>
+
+    <rect id="Norway_Events_cell" x="90" y="720" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Norway_Events_value" x="115" y="739" font-family="Roboto" font-size="10.4" fill="#000">7</text>
+
+    <rect id="Norway_Max_cell" x="150" y="720" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Norway_Max_value" x="164" y="739" font-family="Roboto" font-size="10.4" fill="#000">44.4%</text>
+
+    <rect id="Norway_Median_cell" x="210" y="720" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Norway_Median_value" x="226" y="739" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Norway_Average_cell" x="270" y="720" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Norway_Average_value" x="286" y="739" font-family="Roboto" font-size="10.4" fill="#000">6.6%</text>
+
+    <rect id="Norway_IQR Range_cell" x="330" y="720" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Norway_IQR Range_value" x="346" y="739" font-family="Roboto" font-size="10.4" fill="#000">3.1% - 0.0%</text>
+
+    <rect id="Norway_Std Dev_cell" x="430" y="720" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Norway_Std Dev_value" x="444" y="739" font-family="Roboto" font-size="10.4" fill="#000">12.7%</text>
+
+    <rect id="Finland_Country_cell" x="0" y="750" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Finland_Country_value" x="17" y="769" font-family="Roboto" font-size="10.4" fill="#000">Finland</text>
+
+    <rect id="Finland_Events_cell" x="90" y="750" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Finland_Events_value" x="115" y="769" font-family="Roboto" font-size="10.4" fill="#000">5</text>
+
+    <rect id="Finland_Max_cell" x="150" y="750" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Finland_Max_value" x="164" y="769" font-family="Roboto" font-size="10.4" fill="#000">35.2%</text>
+
+    <rect id="Finland_Median_cell" x="210" y="750" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Finland_Median_value" x="226" y="769" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Finland_Average_cell" x="270" y="750" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Finland_Average_value" x="286" y="769" font-family="Roboto" font-size="10.4" fill="#000">6.9%</text>
+
+    <rect id="Finland_IQR Range_cell" x="330" y="750" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Finland_IQR Range_value" x="346" y="769" font-family="Roboto" font-size="10.4" fill="#000">13.5% - 0.0%</text>
+
+    <rect id="Finland_Std Dev_cell" x="430" y="750" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Finland_Std Dev_value" x="444" y="769" font-family="Roboto" font-size="10.4" fill="#000">11.8%</text>
+
+    <rect id="Belgium_Country_cell" x="0" y="780" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Belgium_Country_value" x="17" y="799" font-family="Roboto" font-size="10.4" fill="#000">Belgium</text>
+
+    <rect id="Belgium_Events_cell" x="90" y="780" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Belgium_Events_value" x="115" y="799" font-family="Roboto" font-size="10.4" fill="#000">7</text>
+
+    <rect id="Belgium_Max_cell" x="150" y="780" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Belgium_Max_value" x="164" y="799" font-family="Roboto" font-size="10.4" fill="#000">33.3%</text>
+
+    <rect id="Belgium_Median_cell" x="210" y="780" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Belgium_Median_value" x="226" y="799" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Belgium_Average_cell" x="270" y="780" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Belgium_Average_value" x="286" y="799" font-family="Roboto" font-size="10.4" fill="#000">2.2%</text>
+
+    <rect id="Belgium_IQR Range_cell" x="330" y="780" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Belgium_IQR Range_value" x="346" y="799" font-family="Roboto" font-size="10.4" fill="#000">0.0% - 0.0%</text>
+
+    <rect id="Belgium_Std Dev_cell" x="430" y="780" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Belgium_Std Dev_value" x="444" y="799" font-family="Roboto" font-size="10.4" fill="#000">6.5%</text>
+
+    <rect id="Austria_Country_cell" x="0" y="810" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Austria_Country_value" x="17" y="829" font-family="Roboto" font-size="10.4" fill="#000">Austria</text>
+
+    <rect id="Austria_Events_cell" x="90" y="810" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Austria_Events_value" x="115" y="829" font-family="Roboto" font-size="10.4" fill="#000">5</text>
+
+    <rect id="Austria_Max_cell" x="150" y="810" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Austria_Max_value" x="164" y="829" font-family="Roboto" font-size="10.4" fill="#000">37.5%</text>
+
+    <rect id="Austria_Median_cell" x="210" y="810" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Austria_Median_value" x="226" y="829" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Austria_Average_cell" x="270" y="810" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Austria_Average_value" x="286" y="829" font-family="Roboto" font-size="10.4" fill="#000">6.7%</text>
+
+    <rect id="Austria_IQR Range_cell" x="330" y="810" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Austria_IQR Range_value" x="346" y="829" font-family="Roboto" font-size="10.4" fill="#000">11.5% - 0.0%</text>
+
+    <rect id="Austria_Std Dev_cell" x="430" y="810" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Austria_Std Dev_value" x="444" y="829" font-family="Roboto" font-size="10.4" fill="#000">11.9%</text>
+
+    <rect id="Argentina_Country_cell" x="0" y="840" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Argentina_Country_value" x="17" y="859" font-family="Roboto" font-size="10.4" fill="#000">Argentina</text>
+
+    <rect id="Argentina_Events_cell" x="90" y="840" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Argentina_Events_value" x="115" y="859" font-family="Roboto" font-size="10.4" fill="#000">5</text>
+
+    <rect id="Argentina_Max_cell" x="150" y="840" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Argentina_Max_value" x="164" y="859" font-family="Roboto" font-size="10.4" fill="#000">20.0%</text>
+
+    <rect id="Argentina_Median_cell" x="210" y="840" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Argentina_Median_value" x="226" y="859" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Argentina_Average_cell" x="270" y="840" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Argentina_Average_value" x="286" y="859" font-family="Roboto" font-size="10.4" fill="#000">1.6%</text>
+
+    <rect id="Argentina_IQR Range_cell" x="330" y="840" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Argentina_IQR Range_value" x="346" y="859" font-family="Roboto" font-size="10.4" fill="#000">0.0% - 0.0%</text>
+
+    <rect id="Argentina_Std Dev_cell" x="430" y="840" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Argentina_Std Dev_value" x="444" y="859" font-family="Roboto" font-size="10.4" fill="#000">5.0%</text>
+
+    <rect id="Colombia_Country_cell" x="0" y="870" width="90" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Colombia_Country_value" x="17" y="889" font-family="Roboto" font-size="10.4" fill="#000">Colombia</text>
+
+    <rect id="Colombia_Events_cell" x="90" y="870" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Colombia_Events_value" x="115" y="889" font-family="Roboto" font-size="10.4" fill="#000">5</text>
+
+    <rect id="Colombia_Max_cell" x="150" y="870" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Colombia_Max_value" x="164" y="889" font-family="Roboto" font-size="10.4" fill="#000">50.0%</text>
+
+    <rect id="Colombia_Median_cell" x="210" y="870" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Colombia_Median_value" x="226" y="889" font-family="Roboto" font-size="10.4" fill="#000">0.0%</text>
+
+    <rect id="Colombia_Average_cell" x="270" y="870" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Colombia_Average_value" x="286" y="889" font-family="Roboto" font-size="10.4" fill="#000">2.7%</text>
+
+    <rect id="Colombia_IQR Range_cell" x="330" y="870" width="100" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Colombia_IQR Range_value" x="346" y="889" font-family="Roboto" font-size="10.4" fill="#000">0.0% - 0.0%</text>
+
+    <rect id="Colombia_Std Dev_cell" x="430" y="870" width="60" height="30" fill="#fff" stroke='#000' stroke-width="0.45"/>
+    <text id="Colombia_Std Dev_value" x="444" y="889" font-family="Roboto" font-size="10.4" fill="#000">11.2%</text>
+</svg>
