@@ -24,6 +24,6 @@ All code was originally developed in JupyterLab notebooks and tested live on Wik
 MIT License – feel free to reuse or adapt.
 
 ## Note
-These are production-tested scripts copied from my personal notebooks. Some may require your own pywikibot setup and credentials.
+These are production-tested scripts copied from **Jupyter Notebook**. Some may require your own pywikibot setup and credentials.
 
 Questions or forks? Open an issue or reach out.
