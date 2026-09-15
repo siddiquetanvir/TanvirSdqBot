@@ -1,0 +1,36 @@
+# OS & Editor
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+
+# Pywikibot credentials — NEVER commit these
+user-config.py
+user-password.py
+*.pwd
+*.pywikibot
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+*.tmp
+*.bak
+
