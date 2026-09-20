@@ -1,5 +1,7 @@
 # TanvirSdqBot — Wikimedia Automation Tools
 
+[![License: GPL-2.0+](https://img.shields.io/badge/License-GPL--2.0%2B-blue.svg?style=flat-square)](https://www.gnu.org/licenses/gpl-2.0.html)
+
 Python-based bots and scripts developed as part of **NDEC WERT** (Notre Dame College Wikimedia Editorial & Research Team) to support Wikipedia and Wikidata editing in 2024.
 
 **Main achievements using these tools:**
@@ -157,4 +159,4 @@ flowchart LR
 
 ## License
 
-MIT License — feel free to reuse or adapt.
+Released under the [GNU General Public License v2.0 or later (GPL-2.0+)](https://www.gnu.org/licenses/gpl-2.0.html).
