@@ -1,35 +1,22 @@
-"""
-Category Bot — TanvirSdqBot
-Headless version: reads English and target category names from CLI args.
-Usage:
-    python3 Category/main.py --encat "Mosques in Nigeria" --tgcat "Juule nder Naajeeriya"
-"""
 import argparse
 import pywikibot
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='TanvirSdqBot category mapper')
-    parser.add_argument('--encat', required=True,
-                        help='English Wikipedia category name (without "Category:" prefix)')
-    parser.add_argument('--tgcat', required=True,
-                        help='Fulani Wikipedia target category name (without "Category:" prefix)')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--encat', required=True)
+    parser.add_argument('--tgcat', required=True)
     return parser.parse_args()
 
 
 class CategoryBot:
-    def __init__(self, encat: str, tgcat: str):
+    def __init__(self, encat, tgcat):
         self.ff = pywikibot.Site('ff', 'wikipedia')
         self.en = pywikibot.Site('en', 'wikipedia')
         self.encat = f'Category:{encat.strip()}'
         self.tgcat = f'Category:{tgcat.strip()}'
 
-    def auth(self):
-        self.ff.login()
-        print(f'✅ Logged in as {self.ff.user()}')
-
-    def qualifies(self, page) -> bool:
-        """Return True if the Fulani page has a matching English Wikipedia category."""
+    def qualifies(self, page):
         if page.length() < 1500:
             return False
         en_page = None
@@ -42,20 +29,20 @@ class CategoryBot:
         for cat in en_page.categories():
             if cat.title() == self.encat:
                 return True
-        print(f'  ⏩ EnCat missing: {page.title()}')
         return False
 
-    def add_category(self, page) -> bool:
+    def add_category(self, page):
         for cat in page.categories():
             if cat.title() == self.tgcat:
-                return False   # already has it
+                return False
         page.text += f'\n[[{self.tgcat}]]'
         page.save(summary=f'Bot: ɓeydunde {self.tgcat}')
         print(f'  ✅ {page.title()}')
         return True
 
     def run(self):
-        self.auth()
+        self.ff.login()
+        print(f'✅ Logged in as {self.ff.user()}')
         count = 0
         for page in self.ff.allpages(namespace=0):
             if self.qualifies(page) and self.add_category(page):
@@ -65,5 +52,4 @@ class CategoryBot:
 
 if __name__ == '__main__':
     args = parse_args()
-    bot = CategoryBot(encat=args.encat, tgcat=args.tgcat)
-    bot.run()
+    CategoryBot(encat=args.encat, tgcat=args.tgcat).run()
