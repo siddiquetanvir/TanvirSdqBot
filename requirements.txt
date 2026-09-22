@@ -1,4 +1,6 @@
 pywikibot
+requests
 pandas
 matplotlib
-folium 
+seaborn
+folium

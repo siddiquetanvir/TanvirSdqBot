@@ -1,75 +1,69 @@
+"""
+Category Bot — TanvirSdqBot
+Headless version: reads English and target category names from CLI args.
+Usage:
+    python3 Category/main.py --encat "Mosques in Nigeria" --tgcat "Juule nder Naajeeriya"
+"""
+import argparse
 import pywikibot
 
 
-class AtCategoryBot:
+def parse_args():
+    parser = argparse.ArgumentParser(description='TanvirSdqBot category mapper')
+    parser.add_argument('--encat', required=True,
+                        help='English Wikipedia category name (without "Category:" prefix)')
+    parser.add_argument('--tgcat', required=True,
+                        help='Fulani Wikipedia target category name (without "Category:" prefix)')
+    return parser.parse_args()
 
-    def __init__(self):
+
+class CategoryBot:
+    def __init__(self, encat: str, tgcat: str):
         self.ff = pywikibot.Site('ff', 'wikipedia')
         self.en = pywikibot.Site('en', 'wikipedia')
-
-        self.bot = "TanvirSdqBot"
-        self.pwd = input("Pass: ")
-
-        self.ecat = f"Category:{input('EnCat: ').strip()}"
-        self.tcat = f"Category:{input('TgCat: ').strip()}"
+        self.encat = f'Category:{encat.strip()}'
+        self.tgcat = f'Category:{tgcat.strip()}'
 
     def auth(self):
-        try:
-            self.ff.login(user=self.bot)
-            print(f"✅ {self.bot}")
-        except Exception as e:
-            print(f"❌ {e}")
-            exit()
+        self.ff.login()
+        print(f'✅ Logged in as {self.ff.user()}')
 
-    def check(self, page):
-
+    def qualifies(self, page) -> bool:
+        """Return True if the Fulani page has a matching English Wikipedia category."""
         if page.length() < 1500:
             return False
-
-        english_page = None
-
+        en_page = None
         for link in page.langlinks():
-            if link.site.lang == "en":
-                english_page = pywikibot.Page(link)
+            if link.site.lang == 'en':
+                en_page = pywikibot.Page(link)
                 break
-
-        if english_page is None:
+        if en_page is None:
             return False
-
-        for category in english_page.categories():
-            if category.title() == self.ecat:
+        for cat in en_page.categories():
+            if cat.title() == self.encat:
                 return True
-
-        print(f"❌ EnCat missing: {page.title()}")
+        print(f'  ⏩ EnCat missing: {page.title()}')
         return False
 
-    def add(self, page):
-
-        for category in page.categories():
-            if category.title() == self.tcat:
-                print(f"➡️ {page.title()}")
-                return False
-
-        page.text += f"\n[[{self.tcat}]]"
-        page.save(summary=f"ɓeydunde {self.tcat}")
-
-        print(f"✅ {page.title()}")
+    def add_category(self, page) -> bool:
+        for cat in page.categories():
+            if cat.title() == self.tgcat:
+                return False   # already has it
+        page.text += f'\n[[{self.tgcat}]]'
+        page.save(summary=f'Bot: ɓeydunde {self.tgcat}')
+        print(f'  ✅ {page.title()}')
         return True
 
     def run(self):
-
         self.auth()
-
         count = 0
-
         for page in self.ff.allpages(namespace=0):
-
-            if self.check(page):
-                if self.add(page):
-                    count += 1
-
-        print(f"🏁 {count}")
+            if self.qualifies(page) and self.add_category(page):
+                count += 1
+        print(f'🏁 Done — {count} page(s) categorised.')
 
 
-if __name__ == "__main__":
-    AtCategoryBot().run()
+if __name__ == '__main__':
+    args = parse_args()
+    bot = CategoryBot(encat=args.encat, tgcat=args.tgcat)
+    bot.run()

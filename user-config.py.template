@@ -1,0 +1,16 @@
+# Pywikibot configuration — TanvirSdqBot
+# Place this file in the root of the TanvirSdqBot directory on Toolforge.
+# DO NOT commit to Git (already in .gitignore).
+
+family = 'wikipedia'
+mylang = 'ff'
+
+# Bot account across wikis
+usernames['wikipedia']['ff'] = 'TanvirSdq'
+usernames['wikipedia']['en'] = 'TanvirSdq'
+
+# Path to the password file (same directory)
+password_file = 'user-password.py'
+
+# Safety throttle (edits per minute, Toolforge default is fine)
+put_throttle = 5
